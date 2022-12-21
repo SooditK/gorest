@@ -5,7 +5,7 @@ import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { toast } from "react-hot-toast";
 
 export const baseUrl =
-  (import.meta.env.API_URL as string) || "http://localhost:8080";
+  (import.meta.env.VITE_API_URL as string) || "http://localhost:8080";
 
 export const useUpdateUser = (user: SelectedUser | null) => {
   const queryClient = useQueryClient();
